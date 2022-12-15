@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    /* background-image: url('https://source.unsplash.com/?landscape'); */
+    background-image: url('./images/full_moon_reflection-wallpaper-1280x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.card{
+    background-color: #000000d0;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    height: auto;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search input{
+    height: 25px;
+    padding: 5px;
+    background-color: #7c7c7c2b;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    max-width: calc(100% - 50px);
+}
+button {
+    background-color: #7c7c7c2b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+button i{
+    font-size: 10px;
+}
+.content > h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 5px;
+}
+.content > h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 5px;
+}
+.group-icon{
+    display: flex;
+    align-items: center;
+}
+.humidity,
+.wind{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.humidity{
+    margin-top: 5px;
+}
+.loading{
+    visibility: hidden;
+    position: relative;
+}
+.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 20px;
+}

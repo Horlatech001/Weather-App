@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font icons -->
+    <link rel="stylesheet" href="themify-icons/css/themify-icons.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Search" class="search-bar" />
+        <button type="button" class="btn-search"><i class="ti-search"></i></button>
+      </div>
+      <div class="weather loading">
+        <div class="content">
+          <h3 class="city">Weather in Tokyo</h3>
+          <h1 class="temp">9.82°C</h1>
+        </div>
+        <div class="icons">
+          <div class="group-icon">
+            <img src="http://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="humidity">Humidity: 66%</div>
+          <div class="wind">Wind: 3.6km/h</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
